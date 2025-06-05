@@ -45,7 +45,7 @@ const Forum = () => {
   ];
   return (
     <div className='bg-white'>
-      <div class="container mx-auto px-4 py-28 lg:py-0 max-w-6xl">
+      <div className="container mx-auto px-4 py-28 lg:py-0 max-w-6xl">
         <div className='text-center mb-6'>
           <h2 className='text-4xl lg:text-5xl font-bold text-gray-900'>
             업무게시판
@@ -87,7 +87,7 @@ const Forum = () => {
 
               <div 
               className='border-b border-gray-100 last:border-b-0 hover:bg-blue-50 transition-colors duration-300'
-              key={post.id}>
+              key={post._id}>
                 <div className='p-6 flex items-center justify-between'>
                   <div className='flex-1'>
                     <div className='flex items-center gap-4 mb-2'>
