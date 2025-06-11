@@ -232,7 +232,7 @@ const AdminContacts = () => {
                       수정
                     </button>
                     <button
-                    onClick={()=>handleEdit(contact._id)}
+                    onClick={()=>handleDelete(contact._id)}
                     className="px-3 py-1.5 bg-red-500 text-white rounded hover:bg-red-600 flex items-center justify-center whitespace-nowrap writing-normal">
                       삭제
                     </button>

@@ -82,11 +82,10 @@ router.post("/login", async (req, res) => {
 
         res.cookie("token", token, {
             httpOnly: true,
-            // secure: "production",
-            secure: false,
-            sameSite: "lax",
+            secure: false,          // ✅ 개발환경에서는 false
+            sameSite: "lax",        // ✅ 또는 "none" 사용 시 secure: true 필요
             maxAge: 24 * 60 * 60 * 1000
-        })
+        });
 
         const userWithoutPassword = user.toObject();
 
